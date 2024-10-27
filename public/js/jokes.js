@@ -24,7 +24,7 @@ function refreshJoke() {
 async function loadJokes() {
   try {
     // fetch the JSON file of jokes
-    const response = await fetch("/jokes.json")
+    const response = await fetch("./jokes.json")
     if (!response.ok) {
       // show an error on the page in the form of a joke
       updateJoke({first: "The list of jokes could not be loaded, sorry", second: `Response status is ${response.status}`})
