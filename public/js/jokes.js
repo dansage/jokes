@@ -56,6 +56,9 @@ function updateJoke(joke) {
     // check if the joke has a second line
     if (undefined !== typeof(joke.second) && joke.second) {
       second.innerText = joke.second
+    } else {
+      // clear the second line when the joke does not have one
+      second.innerText = null
     }
   }
 }
