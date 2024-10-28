@@ -1,21 +1,35 @@
 <!doctype html>
-<html lang="en">
+<html class="h-full" lang="en">
   <head>
     <meta charset="utf-8">
     <title>Daniel's Jokes</title>
-    <link href="./css/jokes.css" rel="stylesheet" type="text/css">
-    <script src="./js/jokes.js" type="application/javascript"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/app.css" rel="stylesheet" type="text/css">
+    <script src="js/app.js" type="application/javascript"></script>
   </head>
-  <body>
-    <div class="container">
-      <noscript>
-        <p>
-          Please enable JavaScript, this site does not function without it. All resources are loaded locally.
-        </p>
-      </noscript>
-      <p id="first">Your joke will be here soon!</p>
-      <p id="second"></p>
-      <p id="actions"><button onclick="refreshJoke()">New Joke</button></p>
+  <body class="h-full">
+    <div class="bg-white dark:bg-gray-800 min-h-full px-4 sm:px-6 grid place-items-center lg:px-8">
+      <div class="max-w-max mx-auto">
+        <main class="sm:flex">
+          <div class="relative">
+            <div class="mx-auto max-w-7xl px-4">
+              <div class="text-center">
+                <h3 class="text-2xl tracking-tight font-extrabold text-indigo-600 dark:text-indigo-400 sm:text-xl md:text-2xl" id="line-one">
+                  <span class="block xl:inline">Daniel's Jokes</span>
+                </h3>
+                <p class="mt-2 max-w-md mx-auto text-base text-gray-700 dark:text-gray-200 sm:text-lg md:mt-4 md:text-xl md:max-w-4xl" id="line-two">
+                  If this does not disappear, make sure JavaScript is enabled in your browser!
+                </p>
+                <div class="mt-2 md:mt-4 space-x-3 sm:border-l sm:border-transparent sm:pl-6">
+                  <button class="px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" onclick="manager.refresh()">
+                    Show me a new joke
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
     </div>
   </body>
 </html>

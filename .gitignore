@@ -1,2 +1,6 @@
 # exclude generated files from the repository
+/public/css/app.css
 /public/jokes.json
+
+# exclude `node_modules` to reduce repository size
+/src/node_modules/

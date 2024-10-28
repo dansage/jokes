@@ -21,8 +21,8 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
-      - name: Gather the jokes
-        run: python gather.py
+      - name: Build the app
+        run: make all
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
